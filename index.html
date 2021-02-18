@@ -28,10 +28,16 @@
     </div>
     <div class="headbar headerbar-bottom"></div>
   </header>
+
+  <div class="prez">
+    <h3 class="couleur-rouge">Un tournant pour la SFMTSI</h3>
+    <p class="prezp">Le changement de nom de notre société, la Société de Pathologie Exotique étant devenue Société Francophone de Médecine Tropicale et Santé Internationale, a marqué un tournant. Notre société s’adapte à l’évolution de la santé et des moyens de communication pour mettre plus largement ses compétences à la disposition de tous ceux qui sont intéressés par les maladies tropicales et la santé internationale dans l’espace francophone.</p>
+    <div class="container_btn"><a href="" class="btn_prez">Accéder au site web</a></div>
+  </div>
+
   <div class="espace"></div>
 
 <article>
-
     <div class="contenu">
       <div class="cards">
         <div class="card article-1">
@@ -319,7 +325,7 @@
     <style type="text/css">
 
     .contenu{
-      max-width: 1100px;
+      max-width: 1500px;
       margin: 0 auto;
     }
     .cards {
@@ -337,23 +343,70 @@
       font-size: 1.4em;
       width: 100%;
   }
+  .prez{
+    margin: auto;
+    background-color: rgba(108, 139, 154, 0.2);
+    height: 370px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 2%;
+  }
+  .prez h3{
+    font-weight: bold;
+    text-align: center;
+    color: #B13E34;
+  }
+  .prezp{
+    padding-right: 7%;
+    padding-left: 7%;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #000000;
+  }
+  .container_btn{
+  display: flex;
+  }
+  .btn_prez{
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    transition: all 0.4s ease 0s;
+    margin: auto;
+    background: #B13E34;
+    border: 2px solid #B13E34;
+    border-radius: 50px;
+  }
+  .btn_prez:hover{
+    background-color: #6c8b9a;
+    border: 2px solid #6c8b9a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 20px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+  }
 
   @media (max-width: 700px) {
     .card {
       width: 100%;
     }
   }
-  @media (min-width: 700px) {
+  @media (min-width: 701px) {
     .card {
-      max-width: 320px;
-      margin-right: 20px;
-      margin-bottom: 20px;
+      max-width: 420px;
+      margin-right: 30px;
+      margin-bottom: 30px;
     }
     .card:nth-child(even) {
       margin-right: 0;
     }
   }
-  @media (min-width: 980px) {
+  @media (min-width: 900px) {
     .card:nth-child(even) {
       margin-right: 20px;
     }
@@ -862,15 +915,6 @@
           margin-left: 0%;
           margin-right: 0%;
     		}
-        .separation-colones--VieSFMTSI{
-          width: 80%;
-        }
-        .separation-colones--Magazine{
-          width: 80%;
-        }
-        .separation-colones--InfoIdee{
-          width: 80%;
-        }
         .article-6{
           margin-top: 0px;
         }
