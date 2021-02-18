@@ -14,8 +14,8 @@
     <div class="mobileheader">
       <img class="headerCol2-mobile" src="https://societe-mtsi.fr/wp-content/uploads/2020/03/110LOGO-SFMTSI-COUL.png" alt="110LOGO-SFMTSI-COUL.png">
     </div>
-    <div class="bleugris"></div>
-    <div class="headbar headerbar-top">
+    <div class="bleugris"><h3 class="header-txt-logo">Société Francophone de Médecine Tropicale et Santé Internationale</h3></div>
+    <div class="headerbar-top">
       <p id="date">23 FEVRIER 2021</p>
     </div>
     <div class="headerContent">
@@ -26,7 +26,7 @@
         <img src="https://societe-mtsi.fr/wp-content/uploads/2020/03/110LOGO-SFMTSI-COUL.png" alt="110LOGO-SFMTSI-COUL.png">
       </div>
     </div>
-    <div class="headbar headerbar-bottom"></div>
+    <div class="headerbar-bottom"></div>
   </header>
 
   <div class="prez">
@@ -302,7 +302,6 @@
     padding: 1.5%;
   }
     .card{
-      position: relative;
       margin-bottom: 20px;
       padding-bottom: 30px;
       color: #363636;
@@ -410,6 +409,15 @@
       width: 40%;
       margin-top: 35px;
     }
+    .header-txt-logo{
+      font-size: 1.6rem;
+      text-align: right;
+      align-items: center;
+      color: #ffffff;
+      font-weight: 400;
+      margin: auto;
+      text-transform: uppercase;
+    }
     header h1{
       color: rgb(177,62,52);
       }
@@ -429,15 +437,16 @@
       .bleugris{
         background-color: #6c8b9a;
         height: 80px;
+        display: flex;
       }
       .espace{
         margin-top: 5rem;
       }
       #date{
   			color: #fff;
-  			position: relative;
-  			text-align: right;
         margin-right: 5%;
+        text-align: right;
+        padding-top: 1px;
   		}
       .headerContent{
   			display: flex;
@@ -448,8 +457,6 @@
   		}
       .headerbar-top{
   			margin-bottom: 0;
-  		}
-      .headerbar-top{
   			height: 20px;
   			background-color: rgb(0,144,171);
   			width: 100%;
@@ -522,88 +529,98 @@
         .couleur-bleuclair{
           color: rgb(0,144,171);
         }
+
+        .article-3{
+          margin-top: -270px;
+        }
         .article-3 h3{
           font-size: 2.2rem;
-        }
-        .article-6{
-          margin-top: 0px;
         }
         .article-4{
           margin-top: 0px;
         }
-        .article-7{
+        .article-6{
           margin-top: 0px;
         }
-        .article-9{
-          margin-top: 0px;
+        .article-7{
+          margin-top: -300px;
         }
         .article-8{
-          margin-top: 0px;
+          margin-top: -190px;
+        }
+        .article-9{
+          margin-top: -300px;
+        }
+        .article-10{
+          margin-top: -10px;
         }
         .article-11 img{
           width: 100%;
         }
         .article-11 {
-          margin-top: 0px;
-        }
-        .article-10{
-          margin-top: 0px;
-        }
-        .article-13{
-          margin-top: 0px;
+          margin-top: -10px;
         }
         .article-12{
-          margin-top: 0px;
+          margin-top: -220px;
+        }
+        .article-13{
+          margin-top: -120px;
         }
         .article-14{
           margin-top: 0px;
         }
+        .article-15{
+          margin-top: -320px;
+        }
+
         .revue-1{
-          margin-top: 0px;
+          margin-top: -60px;
+        }
+        .revue-2{
+          margin-top: -80px;
         }
         .revue-3{
-          margin-top: 0px;
+          margin-top: -300px;
         }
         .revue-4{
-          margin-top: 0px;
+          margin-top: -20px;
         }
         .revue-5{
-          margin-top: 0px;
+          margin-top: -100px;
         }
         .revue-6{
-          margin-top: 0px;
+          margin-top: -220px;
         }
         .revue-7{
-          margin-top: 0px;
+          margin-top: -40px;
         }
         .revue-10{
-          margin-top: 0px;
+          margin-top: -20px;
         }
         .revue-8{
-          margin-top: 0px;
+          margin-top: -70px;
         }
         .revue-9{
-          margin-top: 0px;
+          margin-top: -200px;
         }
         .revue-11{
-          margin-top: 0px;
+          margin-top: -60px;
         }
         .revue-12{
-          margin-top: 0px;
+          margin-top: -20px;
         }
 
-
-        .article-3 .bar--viesfmtsi{
-          display: none;
-        }
-        .article-3 .bar-viedesfmtsi{
-          display: none;
-        }
         .article-2 .bar-viedesfmtsi{
           display: block;
         }
         .article-2 .bar--viesfmtsi{
           display: block;
+        }
+        .article-3 .bar--viesfmtsi{
+          display: none;
+        }
+        .article-3 .bar-viedesfmtsi{
+          display: none;
         }
         .article-4 .bar--viesfmtsi{
           display: block;
@@ -614,24 +631,44 @@
         .article-5 .bar--viesfmtsi{
           display: none;
         }
-        .article-11 .bar--infoidee{
+        .article-5 .bar-viedesfmtsi{
+          display: none;
+        }
+        .article-6 .bar--infoidee{
+          display: block;
+        }
+        .article-6 .bar-infoidee{
+          display: block;
+        }
+        .article-7 .bar--infoidee{
           display: none;
         }
         .article-8 .bar--infoidee{
           display: none;
         }
-        .article-12 .bar--infoidee{
+        .article-10 .bar--infoidee{
           display: none;
         }
-        .article-10 .bar--infoidee{
+        .article-11 .bar--infoidee{
+          display: block;
+        }
+        .article-12 .bar--infoidee{
           display: none;
         }
         .article-13 .bar--infoidee{
           display: none;
         }
+        .article-13 .bar-infoidee{
+          display: none;
+        }
         .article-15 .bar--infoidee{
           display: none;
         }
+        .article-15 .bar-infoidee{
+          display: none;
+        }
+
+
         .revue-4 .bar--revue{
           display: none;
         }
@@ -650,6 +687,9 @@
         .revue-9 .bar--revue{
           display: none;
         }
+        .article-10 .bar-infoidee{
+          display: none;
+        }
         .revue-10 .bar--revue{
           display: none;
         }
@@ -657,19 +697,6 @@
           display: none;
         }
         .revue-12 .bar--revue{
-          display: none;
-        }
-
-        .article-5 .bar-viedesfmtsi{
-          display: none;
-        }
-        .article-10 .bar-infoidee{
-          display: none;
-        }
-        .article-13 .bar-infoidee{
-          display: none;
-        }
-        .article-15 .bar-infoidee{
           display: none;
         }
 
