@@ -28,7 +28,7 @@
     </div>
     <div class="headerbar-bottom"></div>
   </header>
-Dernière modification 14:16 le 20 Février
+Dernière modification 16:03 le 20 Février
   <div class="prez">
       <div class="container_btn">
         <div class="btn_prez-gauche">
@@ -311,14 +311,16 @@ Dernière modification 14:16 le 20 Février
           </div>
         </div>
 
-        <div class="card revue-invisible">
+        <div class="card revue-16">
+          <div class="bar--revue"><h2>REVUE MTSI</h2></div>
           <div class="marge">
-            <h3></h3>
-            <p class="p"></p>
+            <h3>Place des thèses et mémoires dans les publications scientifiques des enseignants de dermato-vénéréologie de l’université de Lomé (Togo)</h3>
+            <p class="p">Mahamadou, G. ., Saka , B. ., Gnassingbé, W. ., Akakpo , S. ., Téclessou , J., Kombaté , K., Tchangai-Walla , K., & Pitché , P. .<a class="couleur-bleuclair" href="http://revuemtsi.societe-mtsi.fr/index.php/bspe-mag/article/view/59"></br> Abstract – PDF</a></p>
+            <div class="separateur-bar bar-revue"></div>
           </div>
         </div>
 
-        <div class="card revue-invisible">
+        <div class="card revue-invisible invisible2">
           <div class="marge">
             <h3></h3>
             <p class="p"></p>
@@ -331,17 +333,17 @@ Dernière modification 14:16 le 20 Février
     </div>
     </div>
   </article>
-  <footer>
+  <footer class="gris">
     <div class="menu">
       <div class="menu-items">
         <a href="https://societe-mtsi.fr">Site de la SFMTSI</a>
         <a href="http://51.210.148.129">Revue MTSI</a>
         <a href="https://www.youtube.com/channel/UCljY2fU50rpryN5pmo_H7BA">Youtube</a>
-        <a href="https://societe-mtsi.us2.list-manage.com/unsubscribe?u=433d2c28745e79a131ffe582f&id=15c947467c">Se désabonner</a>
+        <a class="couleur-spé-desa" href="https://societe-mtsi.us2.list-manage.com/unsubscribe?u=433d2c28745e79a131ffe582f&id=15c947467c">Se désabonner</a>
       </div>
     </div>
     <div class="logocentrer">
-      <img src="https://mcusercontent.com/433d2c28745e79a131ffe582f/images/6feef427-fd08-4d77-878a-9658ab9211bc.jpg" alt="Logo de la SFMTSI">
+      <img src="https://i.ibb.co/1nR8pF3/LOGO-SFMTSI-COUL.png" alt="Logo de la SFMTSI" class="logo_footer">
     </div>
   </footer>
 
@@ -372,7 +374,7 @@ Dernière modification 14:16 le 20 Février
     }
     .menu a{
       margin: auto;
-      color: #000000;
+      color: #505050;
       margin-right: 20px;
       margin-left: 20px;
     }
@@ -403,6 +405,9 @@ Dernière modification 14:16 le 20 Février
       margin-right: auto;
       margin-top: 30px;
       margin-bottom: 20px;
+    }
+    .logo_footer{
+      width: 300px;
     }
 
     .gris{
@@ -444,15 +449,15 @@ Dernière modification 14:16 le 20 Février
     text-align: center;
     color: #B13E34;
     text-transform: uppercase;
+    margin-bottom: 2%;
   }
   .prezp{
-    padding-right: 17%;
-    padding-left: 17%;
+    max-width: 1400px;
     font-size: 1.5rem;
-    margin-top: 2%;
     margin-bottom: 50px;
     color: #000000;
     text-align: justify;
+    margin: auto;
   }
   .container_btn{
     margin-bottom: 30px;
@@ -542,17 +547,22 @@ Dernière modification 14:16 le 20 Février
   }
   @media (min-width: 701px) {
     .card {
-      max-width: 450px;
-      margin-right: 30px;
+      width: 80%;
+      margin-right: 15px;
+      margin-left: 15px;
       margin-bottom: 30px;
     }
     .card:nth-child(even) {
       margin-right: 0;
     }
   }
-  @media (min-width: 998px) {
+  @media (min-width: 984px) {
+    .card{
+      max-width: 450px;
+    }
     .card:nth-child(even) {
-      margin-right: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
     .card:nth-child(3n) {
       margin-right: 0;
@@ -561,11 +571,14 @@ Dernière modification 14:16 le 20 Février
 
 
     html{
-      background-color: #fff;
+      background-color: #f5f5f5;
     }
     * {
       margin: 0px;
       padding: 0px;
+    }
+    header{
+      background-color: #ffffff;
     }
     .headerCol2-mobile{
       display: none;
@@ -586,7 +599,7 @@ Dernière modification 14:16 le 20 Février
     a img{
       width: 40%;
       margin-top: 35px;
-      border: solid 2px rgb(0, 0, 0);
+      border: solid 1px rgb(0, 0, 0);
     }
     .header-txt-logo{
       font-size: 1.6rem;
@@ -703,6 +716,12 @@ Dernière modification 14:16 le 20 Février
         }
         .couleur-bleuclair{
           color: rgb(0,144,171);
+        }
+        .couleur-spé-desa{
+          color:  rgb(177,62,52);
+        }
+        .couleur-spé-desa:hover{
+          color:  #000000;
         }
 
         .article-3{
@@ -884,6 +903,9 @@ Dernière modification 14:16 le 20 Février
           display: none;
         }
         .revue-15 .bar--revue{
+          display: none;
+        }
+        .revue-16 .bar--revue{
           display: none;
         }
 
@@ -1096,6 +1118,7 @@ Dernière modification 14:16 le 20 Février
         .revue-invisible{
           display: none;
         }
+
       }
 
       @media screen and (min-width: 601px) and (max-width: 975px){
@@ -1114,6 +1137,15 @@ Dernière modification 14:16 le 20 Février
         .headerContent{
           margin-left: 0%;
           margin-right: 0%;
+        }
+        .prezp{
+          padding-right: 17%;
+          padding-left: 17%;
+          font-size: 1rem;
+          margin-top: 2%;
+          margin-bottom: 50px;
+          color: #000000;
+          text-align: justify;
         }
         .espace{
           background-color: green;
@@ -1219,6 +1251,117 @@ Dernière modification 14:16 le 20 Février
           margin-top: 0px;
         }
 
+        .revue-invisible{
+          display: none;
+        }
+        .article-2 .separateur-bar{
+          display: block;
+        }
+        .article-2 .bar--viesfmtsi{
+          display: block;
+        }
+        .article-3 .bar--viesfmtsi{
+          display: block;
+        }
+        .article-3 .separateur-bar{
+          display: block;
+        }
+        .article-4 .bar--viesfmtsi{
+          display: none;
+        }
+        .article-4 .separateur-bar{
+          display: none;
+        }
+        .article-5 .bar--viesfmtsi{
+          display: none;
+        }
+        .article-5 .separateur-bar{
+          display: none;
+        }
+        .article-6 .bar--infoidee{
+          display: block;
+        }
+        .article-6 .bar-infoidee{
+          display: none;
+        }
+        .article-7 .bar--infoidee{
+          display: block;
+        }
+        .article-8 .bar--infoidee{
+          display: none;
+        }
+        .article-9 .bar--infoidee{
+          display: none;
+        }
+        .article-10 .bar--infoidee{
+          display: none;
+        }
+        .article-10 .bar-infoidee{
+          display: block;
+        }
+        .article-11 .bar--infoidee{
+          display: none;
+        }
+        .article-12 .bar--infoidee{
+          display: none;
+        }
+        .article-13 .bar--infoidee{
+          display: none;
+        }
+        .article-13 .bar-infoidee{
+          display: block;
+        }
+        .article-15 .bar--infoidee{
+          display: none;
+        }
+        .article-15 .bar-infoidee{
+          display: none;
+        }
+
+        .revue-2 .bar--revue{
+          display: none;
+        }
+        .revue-3 .bar--revue{
+          display: none;
+        }
+        .revue-4 .bar--revue{
+          display: none;
+        }
+        .revue-5 .bar--revue{
+          display: none;
+        }
+        .revue-6 .bar--revue{
+          display: none;
+        }
+        .revue-7 .bar--revue{
+          display: none;
+        }
+        .revue-8 .bar--revue{
+          display: none;
+        }
+        .revue-9 .bar--revue{
+          display: none;
+        }
+        .revue-10 .bar--revue{
+          display: none;
+        }
+        .revue-11 .bar--revue{
+          display: none;
+        }
+        .revue-12 .bar--revue{
+          display: none;
+        }
+        .revue-13 .bar--revue{
+          display: none;
+        }
+        .revue-14 .bar--revue{
+          display: none;
+        }
+        .revue-15 .bar--revue{
+          display: none;
+        }
+
+
       }
 
 
@@ -1250,6 +1393,15 @@ Dernière modification 14:16 le 20 Février
           border-radius: 0px;
           padding-top: 0px;
           background-color: #ffffff;
+        }
+        .prezp{
+          padding-right: 10%;
+          padding-left: 10%;
+          font-size: 1.2rem;
+          margin-top: 2%;
+          margin-bottom: 20px;
+          color: #000000;
+          text-align: justify;
         }
 
         .revue-invisible{
@@ -1383,13 +1535,13 @@ Dernière modification 14:16 le 20 Février
           margin-top: 0px;
         }
         .article-8{
-          margin-top: -370px;
+          margin-top: -340px;
         }
         .article-9{
           margin-top: -370px;
         }
         .article-10{
-          margin-top: -260px;
+          margin-top: -240px;
         }
         .article-11{
           margin-top: -40px;
@@ -1404,7 +1556,7 @@ Dernière modification 14:16 le 20 Février
           margin-top: 0px;
         }
         .article-15{
-          margin-top: -240px;
+          margin-top: -230px;
         }
         .revue-1{
           margin-top: -10px;
@@ -1450,6 +1602,13 @@ Dernière modification 14:16 le 20 Février
         }
         .revue-15{
           margin-top: -20px;
+        }
+        .revue-16{
+          margin-top: -170px;
+        }
+
+        .invisible2{
+          display: block;
         }
 
       }
