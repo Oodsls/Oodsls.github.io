@@ -34,6 +34,7 @@ Dernière modification 16:03 le 20 Février
         <div class="btn_prez-gauche">
           <a href="https://societe-mtsi.fr" class="btn_prez-site">Site SFMTSI</a>
           <a href="http://51.210.148.129" class="btn_prez-revue">Revue MTSI</a>
+          <a class="btn_prez-rejoindre-smartphone" href="https://societe-mtsi.fr/adherer/">Rejoignez-nous !</a>
         </div>
         <div class="btn_droite">
           <a class="btn_prez-rejoindre" href="https://societe-mtsi.fr/adherer/">Rejoignez-nous !</a>
@@ -465,11 +466,15 @@ Dernière modification 16:03 le 20 Février
     display: flex;
     justify-content: space-between;
   }
+  .btn_prez-rejoindre-smartphone{
+    display: none;
+  }
   .btn_prez-gauche{
     margin-left: 17%;
     align-items: flex-start;
   }
   .btn_droite{
+    margin-top: -10px;
     margin-bottom: 0px;
     padding-top: 0px;
     margin-right: 17%;
@@ -530,6 +535,23 @@ Dernière modification 16:03 le 20 Février
     background: #6c8b9a;
     border: 2px solid #6c8b9a;
     border-radius: 10px;
+  }
+  .btn_prez-rejoindre-smartphone{
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.4s ease 0s;
+    margin: auto;
+    background: #6c8b9a;
+    border: 2px solid #6c8b9a;
+    border-radius: 10px;
+  }
+  .btn_prez-rejoindre-smartphone:hover{
+    background: rgb(0,144,171);
+    border: 2px solid rgb(0,144,171);
   }
   .btn_prez-rejoindre:hover{
     background-color: rgb(0,144,171);
@@ -934,6 +956,35 @@ Dernière modification 16:03 le 20 Février
           margin-left: 3%;
           margin-top: 2%;
         }
+        .prezp{
+          width: 80%;
+          font-size: 1rem;
+          margin-bottom: 20px;
+          color: #000000;
+          text-align: justify;
+          margin: auto;
+        }
+        .btn_prez-rejoindre{
+          display: none;
+        }
+        .btn_prez-rejoindre-smartphone{
+          margin-left: 10px;
+          margin-right: 10px;
+          display: inline;
+        }
+        .btn_prez-gauche{
+          margin-left: 0%;
+          align-items: center;
+        }
+        .btn_droite{
+          display: none;
+        }
+        .container_btn{
+          margin-bottom: 60px;
+          padding-top: 70px;
+          display: flex;
+          justify-content: space-around;
+        }
         #date{
     			color: #fff;
     			position: relative;
@@ -986,40 +1037,56 @@ Dernière modification 16:03 le 20 Février
         .article-3 h3{
           font-size: 1.4rem;
         }
-        .article-6{
+
+        .article-1{
+          margin-top: 0px;
+        }
+        .article-2{
+          margin-top: 0px;
+        }
+        .article-3{
           margin-top: 0px;
         }
         .article-4{
           margin-top: 0px;
         }
-        .article-7{
+        .article-5{
           margin-top: 0px;
         }
-        .article-9{
+        .article-6{
+          margin-top: 0px;
+        }
+        .article-7{
           margin-top: 0px;
         }
         .article-8{
           margin-top: 0px;
         }
-        .article-11 img{
-          width: 100%;
-        }
-        .article-11 {
+        .article-9{
           margin-top: 0px;
         }
         .article-10{
           margin-top: 0px;
         }
-        .article-13{
+        .article-11{
           margin-top: 0px;
         }
         .article-12{
           margin-top: 0px;
         }
+        .article-13{
+          margin-top: 0px;
+        }
         .article-14{
           margin-top: 0px;
         }
+        .article-15{
+          margin-top: 0px;
+        }
         .revue-1{
+          margin-top: 0px;
+        }
+        .revue-2{
           margin-top: 0px;
         }
         .revue-3{
@@ -1037,13 +1104,13 @@ Dernière modification 16:03 le 20 Février
         .revue-7{
           margin-top: 0px;
         }
-        .revue-10{
-          margin-top: 0px;
-        }
         .revue-8{
           margin-top: 0px;
         }
         .revue-9{
+          margin-top: 0px;
+        }
+        .revue-10{
           margin-top: 0px;
         }
         .revue-11{
@@ -1052,45 +1119,56 @@ Dernière modification 16:03 le 20 Février
         .revue-12{
           margin-top: 0px;
         }
+        .revue-13{
+          margin-top: 0px;
+        }
+        .revue-14{
+          margin-top: 0px;
+        }
+        .revue-15{
+          margin-top: 0px;
+        }
 
-        .article-2 .bar--viesfmtsi{
+        .revue-invisible{
           display: none;
         }
-        .article-2 .bar-viesfmtsi{
+        .article-2 .separateur-bar{
+          display: block;
+        }
+        .article-2 .bar--viesfmtsi{
           display: block;
         }
         .article-3 .bar--viesfmtsi{
+          display: block;
+        }
+        .article-3 .separateur-bar{
+          display: block;
+        }
+        .article-4 .bar--viesfmtsi{
+          display: none;
+        }
+        .article-4 .separateur-bar{
           display: none;
         }
         .article-5 .bar--viesfmtsi{
           display: none;
         }
         .article-5 .separateur-bar{
-          display: block;
-        }
-        .article-4 .bar--viesfmtsi{
-          display: none;
-        }
-        .article-2 .separateur-bar{
-          display: block;
-        }
-
-        .article-11 .bar--infoidee{
           display: none;
         }
         .article-6 .bar--infoidee{
           display: block;
         }
         .article-6 .bar-infoidee{
-          display: block;
+          display: none;
         }
         .article-7 .bar--infoidee{
+          display: block;
+        }
+        .article-8 .bar--infoidee{
           display: none;
         }
         .article-9 .bar--infoidee{
-          display: none;
-        }
-        .article-12 .bar--infoidee{
           display: none;
         }
         .article-10 .bar--infoidee{
@@ -1099,24 +1177,79 @@ Dernière modification 16:03 le 20 Février
         .article-10 .bar-infoidee{
           display: block;
         }
-        .article-13 .bar-infoidee{
-          display: block;
+        .article-11 .bar--infoidee{
+          display: none;
         }
-
+        .article-12 .bar--infoidee{
+          display: none;
+        }
         .article-13 .bar--infoidee{
           display: none;
+        }
+        .article-13 .bar-infoidee{
+          display: block;
         }
         .article-15 .bar--infoidee{
           display: none;
         }
+        .article-15 .bar-infoidee{
+          display: none;
+        }
+
         .revue-2 .bar--revue{
           display: none;
         }
         .revue-3 .bar--revue{
           display: none;
         }
-        .revue-invisible{
+        .revue-4 .bar--revue{
           display: none;
+        }
+        .revue-5 .bar--revue{
+          display: none;
+        }
+        .revue-6 .bar--revue{
+          display: none;
+        }
+        .revue-7 .bar--revue{
+          display: none;
+        }
+        .revue-8 .bar--revue{
+          display: none;
+        }
+        .revue-9 .bar--revue{
+          display: none;
+        }
+        .revue-10 .bar--revue{
+          display: none;
+        }
+        .revue-11 .bar--revue{
+          display: none;
+        }
+        .revue-12 .bar--revue{
+          display: none;
+        }
+        .revue-13 .bar--revue{
+          display: none;
+        }
+        .revue-14 .bar--revue{
+          display: none;
+        }
+        .revue-15 .bar--revue{
+          display: none;
+        }
+
+        .menu-items{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 40px;
+        }
+
+        .menu-items a{
+          display: inline-flex;
         }
 
       }
@@ -1158,6 +1291,24 @@ Dernière modification 16:03 le 20 Février
           border-radius: 0px;
           padding-top: 0px;
           background-color: #ffffff;
+        }
+        .container_btn{
+          margin-bottom: 60px;
+          padding-top: 70px;
+          display: flex;
+          justify-content: space-around;
+        }
+        .btn_droite{
+          display: none;
+        }
+        .btn_prez-rejoindre-smartphone{
+          margin-left: 10px;
+          margin-right: 10px;
+          display: inline;
+        }
+        .btn_prez-gauche{
+          margin-left: 0%;
+          align-items: center;
         }
 
         .article-1{
@@ -1402,6 +1553,9 @@ Dernière modification 16:03 le 20 Février
           margin-bottom: 20px;
           color: #000000;
           text-align: justify;
+        }
+        .container_btn{
+          margin-bottom: 50px;
         }
 
         .revue-invisible{
